@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/bootstrap';
+
+.page-wrapper {
+	min-height: 100vh;
+	display: flex;
+	&.center {
+		justify-content: center;
+		align-items: center;
+	}
+	.header {
+		display: flex;
+		justify-content: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.main {
+		flex: 1;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-top: 1px solid #000;
+		.game-table {
+			table {
+				width: 100%;
+				td,
+				th {
+					padding: 5px 10px;
+				}
+			}
+		}
+	}
+}
